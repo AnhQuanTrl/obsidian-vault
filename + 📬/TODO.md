@@ -1,0 +1,1 @@
+1. Fix blink.cmp inability to handle python completion for variable. (automatically create auto pair)
