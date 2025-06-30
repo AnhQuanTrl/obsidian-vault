@@ -173,3 +173,5 @@ Use kubectl events instead of kubectl get events in k8s > 1.26
 https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/
 
 strategic marge path: view patch merge key using https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.33 
+
+`k get componentstatuses` -> get current cluster compontent status
