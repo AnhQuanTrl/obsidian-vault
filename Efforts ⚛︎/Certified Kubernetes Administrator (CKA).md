@@ -99,6 +99,15 @@ Use this to test ingress without setting /etc/hosts
 ```
 curl --resolve demo.localdev.me:80:10.0.30.40 http://demo.localdev.me:80
 ```
+```
+-s silent
+-w special format
+-o save to file
+-I get header only
+-O save to file with name equal to resource
+-k bypass tls verification
+```
+
 Check for any CM to know the controllerName
 
 Remeber some commands and construct such as `while true; ... done` and `tail -f` and `sudo dpkg -i`
@@ -148,6 +157,8 @@ curlimages/curl -> useful for debug with curl
 ```
 
 **TROUBLESHOOTING**:
+
+Can use `kubectl logs --previous` to check previous container logs if container keep restarting.
 
 Debug cannot connect to kube-apiserver
 ```
